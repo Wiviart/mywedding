@@ -1,0 +1,220 @@
+.invitation-content {
+    font-size: 21px;
+    /* Adjust the size as needed */
+}
+
+@-webkit-keyframes biilogo-pulse {
+    from {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    50% {
+        -webkit-transform: scale3d(0.95, 0.95, 0.95);
+        transform: scale3d(0.95, 0.95, 0.95);
+    }
+
+    to {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes biilogo-pulse {
+    from {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    50% {
+        -webkit-transform: scale3d(0.95, 0.95, 0.95);
+        transform: scale3d(0.95, 0.95, 0.95);
+    }
+
+    to {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+.bii-player {
+    position: fixed;
+    bottom: 70px;
+    left: 50px;
+    width: 40px;
+    height: 40px;
+    z-index: 99999;
+    display: none;
+}
+
+.bii-player .playerIcon {
+    cursor: pointer;
+    display: block;
+    width: 40px;
+    height: 40px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    background-color: #df4758;
+    padding-top: 7px;
+    padding-left: 9px;
+    position: absolute;
+    z-index: 2;
+}
+
+.bii-player:after {
+    content: "";
+    position: absolute;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: rgba(242, 59, 67, 0.3);
+    width: 120%;
+    height: 120%;
+    left: -10%;
+    top: -10%;
+    -webkit-animation: biilogo-pulse 1s infinite;
+    animation: biilogo-pulse 1s infinite;
+    z-index: 1;
+}
+
+.bii-player img {
+    width: 100%;
+    z-index: 99999;
+    position: absolute;
+    cursor: pointer;
+}
+
+.bii-player.show-sec .bii-player-secondary {
+    visibility: visible;
+}
+
+.bii-player.show-sec .bii-player-secondary-content {
+    transform: translate3d(0, 0, 0);
+}
+
+.bii-player-secondary {
+    position: absolute;
+    width: 310px;
+    left: 25px;
+    height: 50px;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.bii-player-secondary-content {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    position: absolute;
+    width: 310px;
+    left: -25px;
+    background: #fff;
+    height: 40px;
+    padding: 8px 11px 8px 50px;
+    border: 1px solid #df4759;
+    border-radius: 30px;
+    z-index: 1;
+    font-size: 14px;
+    transform: translate3d(-100%, 0, 0);
+    transition: transform 175ms ease;
+    font-family: arial;
+    font-weight: 200;
+    color: #000;
+}
+
+@media (max-width: 799px) {
+    .bii-player {
+        bottom: 30px;
+        left: 20px;
+    }
+}
+
+.mouse-scroll-on-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 576px) {
+    .mouse-scroll-on-mobile {
+        width: 95px;
+        height: 30px;
+        margin: 0 0 0 -30px;
+        position: fixed;
+        right: calc(50% - 52px);
+        bottom: 80px;
+        -webkit-animation: arrow .5s 1s infinite ease-in-out alternate;
+        z-index: 999;
+        display: block !important;
+        visibility: hidden
+    }
+
+    .mouse-scroll-on-mobile:hover {
+        -webkit-animation-play-state: paused
+    }
+
+    .mouse-scroll-on-mobile .mouse-scroll-on-mobile-text {
+        text-align: center;
+        bottom: 120px;
+        position: absolute;
+        left: 1px;
+        background: #fff;
+        padding: 5px 10px;
+        border-radius: 3px;
+        font-size: 15px;
+        color: #000;
+    }
+
+    .mouse-scroll-on-mobile .mouse-scroll-on-mobile-left {
+        position: absolute;
+        height: 5px;
+        width: 30px;
+        background: #de4659;
+        -webkit-transform: rotate(240deg);
+        bottom: 80px;
+        left: 42px;
+        -webkit-border-radius: 4px;
+        -webkit-transform-origin: 5px 50%;
+        -webkit-animation: leftArrow .5s 1s infinite ease-out alternate
+    }
+
+    .mouse-scroll-on-mobile .mouse-scroll-on-mobile-right {
+        position: absolute;
+        height: 5px;
+        width: 30px;
+        background: #de4659;
+        -webkit-transform: rotate(-60deg);
+        bottom: 80px;
+        left: 46px;
+        -webkit-border-radius: 4px;
+        -webkit-transform-origin: 5px 50%;
+        -webkit-animation: rightArrow .5s 1s infinite ease-out alternate
+    }
+}
+
+@-webkit-keyframes arrow {
+    0% {
+        bottom: 0
+    }
+
+    100% {
+        bottom: 40px
+    }
+}
+
+@-webkit-keyframes leftArrow {
+    100% {
+        -webkit-transform: rotate(225deg)
+    }
+}
+
+@-webkit-keyframes rightArrow {
+    100% {
+        -webkit-transform: rotate(-45deg)
+    }
+}
