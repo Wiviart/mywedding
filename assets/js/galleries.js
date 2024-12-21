@@ -56,3 +56,6 @@ photoGalleries.push({
 //     thumb: "https://cdn.biihappy.com/ziiweb/default/website/galleries/6199027ed7e97a1853119578/small.jpg",
 //     subHtml: `<div class="lg-sub-html"><h4>Bước đi với bàn tay của bạn trong tay tôi và bàn tay của tôi trong tay bạn, đó chính xác là nơi tôi muốn luôn ở đó</h4></div>`
 // });
+
+// Optionally, log the photoGalleries array to the console to check if it's populated correctly
+console.log(photoGalleries);

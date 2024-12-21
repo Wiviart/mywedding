@@ -21,9 +21,6 @@ function loadExternalScripts() {
 // Call the function to load external scripts
 loadExternalScripts();
 
-// Optionally, log the photoGalleries array to the console to check if it's populated correctly
-console.log(photoGalleries);
-
 // Function to add event to Google Calendar
 function addEventToGoogleCalendar(eventName, eventDescription, eventLocation, eventStartDate, eventEndDate) {
     const googleCalendarUrl = `https://calendar.google.com/calendar/r/eventedit?text=${encodeURIComponent(eventName)}&details=${encodeURIComponent(eventDescription)}&location=${encodeURIComponent(eventLocation)}&dates=${eventStartDate.replace(/[-:]/g, '')}Z/${eventEndDate.replace(/[-:]/g, '')}Z`;
