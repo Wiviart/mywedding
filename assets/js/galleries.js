@@ -58,4 +58,4 @@ photoGalleries.push({
 // });
 
 // Optionally, log the photoGalleries array to the console to check if it's populated correctly
-console.log(photoGalleries);
+// console.log(photoGalleries);
