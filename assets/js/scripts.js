@@ -8,11 +8,6 @@ function loadExternalScripts() {
         "preview.iwedding.info/common/calendar.js",
         "preview.iwedding.info/common/biicommon.min.js",
         "https://apis.google.com/js/api.js",
-        "assets/js/galleries.js",
-        "assets/js/jsonparse.js",
-        "assets/js/music.js",
-        "assets/js/calendar.js",
-        "assets/js/wishes.js",
     ];
 
     // Dynamically load each script
