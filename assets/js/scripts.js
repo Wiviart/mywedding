@@ -1,13 +1,12 @@
 // External script loading (for libraries)
 function loadExternalScripts() {
     var scripts = [
-        "preview.iwedding.info/templates/template134/js/libs.js",
-        "preview.iwedding.info/templates/template134/js/script.js",
-        "preview.iwedding.info/common/emoji-picker/js/insertTextAtCursor.js",
-        "https://preview.iwedding.info/common/emoji-picker/js/init.js",
         "preview.iwedding.info/common/calendar.js",
         "preview.iwedding.info/common/biicommon.min.js",
-        "https://apis.google.com/js/api.js",
+        "preview.iwedding.info/common/emoji-picker/js/init.js",
+        "preview.iwedding.info/common/emoji-picker/js/insertTextAtCursor.js",
+        "preview.iwedding.info/templates/template134/js/libs.js",
+        "preview.iwedding.info/templates/template134/js/script.js",
     ];
 
     // Dynamically load each script
