@@ -4,9 +4,10 @@ function loadExternalScripts() {
         "preview.iwedding.info/templates/template134/js/libs.js",
         "preview.iwedding.info/templates/template134/js/script.js",
         "preview.iwedding.info/common/emoji-picker/js/insertTextAtCursor.js",
-        // "preview.iwedding.info/common/emoji-picker/js/init.js",
+        "preview.iwedding.info/common/emoji-picker/js/init.js",
         "preview.iwedding.info/common/calendar.js",
         "preview.iwedding.info/common/biicommon.min.js",
+        // "./assets/js/jsonparse.js",
     ];
 
     // Dynamically load each script
