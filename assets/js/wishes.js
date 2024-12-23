@@ -1,46 +1,19 @@
-const SHEET_ID = "1ZR3w80S_YP1REoJwwPw5ozTbjSTBPLDjBa2YpnmvP5c"
-const SHEET_TITLE = "Sheet1"
-const SHEET_RANGE = "A:C"
-const CLIENT_ID = "118283836346029842933.apps.googleusercontent.com"
+// Send form data to the proxy server
+const scriptURL = "https://wedding-proxy-429081919308.asia-southeast1.run.app/proxy";
 
-// Load the Google API client library
-function initClient() {
-    gapi.load('client:auth2', function () {
-        gapi.auth2.init({
-            client_id: CLIENT_ID,
-        }).then(function () {
-            console.log('GAPI client initialized.');
-        });
-    });
-}
-
-// Function to append data to Google Sheets
 function sendToGoogleSheets(name, email, content) {
-    const values = [[name, email, content]]; // Prepare data in a 2D array format
+    const data = { name, email, content };
 
-    const body = { values: values };
-
-    gapi.client.sheets.spreadsheets.values.append({
-        spreadsheetId: SHEET_ID,
-        range: SHEET_TITLE + "!" + SHEET_RANGE,
-        valueInputOption: 'USER_ENTERED',
-        resource: body
-    }).then((response) => {
-        const result = response.result;
-        console.log(`${result.updates.updatedCells} cells appended.`);
-        document.getElementById('success').style.display = 'block'; // Show success message
-    }, (error) => {
-        console.error('Error appending data: ', error);
-        document.getElementById('error').style.display = 'block'; // Show error message
-    });
+    fetch(scriptURL, {
+        method: 'POST',
+        body: JSON.stringify(data),
+        headers: { 'Content-Type': 'application/json' }
+    })
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message));
 }
 
-// Initialize the client when the page loads
-window.onload = function () {
-    initClient();
-};
-
-// Event listener for form submission
+// Show data on the page
 document.getElementById('wish-form').addEventListener('submit', function (event) {
     event.preventDefault(); // Prevent default form submission
 
@@ -54,6 +27,9 @@ document.getElementById('wish-form').addEventListener('submit', function (event)
 
     // Send data to Google Sheets
     sendToGoogleSheets(name, email, content);
+
+    // Clear the form
+    document.getElementById('wish-form').reset();
 });
 
 function displayComment(name, content) {

@@ -1,0 +1,17 @@
+# Use an official Node.js image as a base
+FROM node:latest
+
+# Set the working directory inside the container
+WORKDIR /app
+
+# Install express directly without a package.json
+RUN npm install express cors node-fetch body-parser
+
+# Copy the rest of the application files into the container
+COPY . .
+
+# Expose the port that the application will run on
+EXPOSE 3000
+
+# Start the application
+CMD ["node", "server.js"]
