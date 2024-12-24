@@ -1,8 +1,8 @@
 // Send form data to the proxy server
 const scriptURL = "https://wedding-proxy-429081919308.asia-southeast1.run.app/proxy";
 
-function sendToGoogleSheets(name, email, content) {
-    const data = { name, email, content };
+function sendToGoogleSheets(name, email, content, sheetName) {
+    const data = { name, email, content, sheetName };
 
     fetch(scriptURL, {
         method: 'POST',
@@ -20,13 +20,14 @@ document.getElementById('wish-form').addEventListener('submit', function (event)
     // Get values from the form
     const name = document.getElementById('name-comment').value;
     const email = document.getElementById('email-comment').value;
-    const content = document.getElementById('content') ? document.getElementById('content').value : ''; // Ensure content is defined
+    const content = document.getElementById('content') ? document.getElementById('content').value : '';
+    const sheetName = "Wishes"; // Ensure content is defined
 
     // Display the comment
     displayComment(name, content);
 
     // Send data to Google Sheets
-    sendToGoogleSheets(name, email, content);
+    sendToGoogleSheets(name, email, content, sheetName);
 
     // Clear the form
     document.getElementById('wish-form').reset();
