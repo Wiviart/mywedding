@@ -7,27 +7,41 @@
   }
   
   ::-webkit-scrollbar-thumb {
-    background-color: #A6AEAD;
+    background-color: #df4758;
   }
   
   body {
     font-family: "Bellota Text", cursive;
   }
-  .section-bg-affect h2,
-  .section-bg-affect h3,
-  .section-bg-affect h5,
-  .section-bg-affect h6,
-  .section-bg-affect a,
-  .section-bg-affect p,
-  .section-bg-affect span,
-  .section-bg-affect div {
-    color: #fff;
+  .section-bg-affect h2 {
+    color: #0e132a;
+  }
+  .section-bg-affect h3 {
+    color: #0e132a;
+  }
+  .section-bg-affect h5 {
+    color: #0e132a;
+  }
+  .section-bg-affect h6 {
+    color: #ffffff;
+  }
+  .section-bg-affect a {
+    color: #0e132a;
+  }
+  .section-bg-affect p {
+    color: #0e132a;
+  }
+  .section-bg-affect span {
+    color: #0e132a;
+  }
+  .section-bg-affect div  {
+    color: #0e132a;
   }
   .section-bg-affect:nth-child(even) {
-    background-color: #a6aead;
+    background-color: #f4ece8;
   }
   .section-bg-affect:nth-child(odd) {
-    background-color: #a6aead;
+    background-color: #f4ece8;
   }
   
   .story-section .timeline-card::before {
@@ -234,7 +248,7 @@
     padding: 10px 20px;
   }
   .gallery-section .btn-secondary.btn-see-more-gallery {
-    background: #696e6f;
+    background: #df4758;
   }
   .gallery-item{
     cursor: pointer;
@@ -255,11 +269,11 @@
     color: #bababa;
   }
   .weddingdate-section .mini_calendar table th {
-    color: #fff;
+    color: #000000;
   }
   .weddingdate-section .mini_calendar .calendar-month {
     font-weight: bold;
-    color: #fff;
+    color: #000000;
   }
   
   .weddingdate-section #clock > div {
@@ -284,11 +298,11 @@
   }
   
   .weddingdate-section .mini_calendar td {
-    color: #fff;
+    color: #000000;
   }
   
   .weddingdate-section .countdown .box {
-    color: #fff !important;
+    color: #000000 !important;
   }
   
   .weddingdate-section .mini_calendar table th {
@@ -313,7 +327,7 @@
   .invitation-section .invitation-content {
     text-align: left !important;
     color: #38412f;
-    border: 1px dashed #aaa;
+    /* border: 1px dashed #aaa; */
     border-radius: 10px;
   }
   .invitation-section .invitation-content p {
@@ -340,7 +354,7 @@
     bottom: 0;
     transform: translateX(-40%);
     height: 1px;
-    background-color: #fff;
+    background-color: #000000;
   }
   .invitation-section .wrap-name {
     align-items: center;
@@ -367,6 +381,7 @@
   }
   .invitation-section .heart {
     font-size: 1.5rem !important;
+    color: #9d352d;
   }
   .invitation-section .crown {
     width: 50px;
@@ -424,6 +439,7 @@
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     z-index: 1;
+    background-color: #e3c28a;
   }
   .flip-card-back>ul{
     bottom: 10px;
@@ -480,7 +496,7 @@
   /* wishes-section */
   
   .wish-box {
-    border-color: #fff;
+    border-color: #0e132a;
   }
   .wish-box .wish-box-item.bg {
     background-color: rgb(128 178 222 / 50%);
@@ -490,7 +506,7 @@
     background-color: #6f696f;
     border: none;
     transition: 0.2s;
-    color: #fff;
+    color: #0e132a;
   }
   
   .wishes-section button:hover,
@@ -607,7 +623,7 @@
   .tooltip .tooltip-inner{padding: 8px 6px;font-size: 15px;}
   #wish-form .wishes-autocomplete-content{position: absolute;top: 50px;width: 100%;left: 0;z-index: 333;background: #fff;-webkit-box-shadow: 0 1px 2px 0 rgb(60 64 67 / 35%), 0 2px 6px 2px rgb(60 64 67 / 35%);box-shadow: 0 1px 2px 0 rgb(60 64 67 / 35%), 0 2px 6px 2px rgb(60 64 67 / 35%);}
   #wish-form .wishes-autocomplete-content input{
-      background-image: url('https://cdn.biihappy.com/ziiweb/images/static/common/searchicon.png')!important;
+      background-image: url('searchicon.png')!important;
       background-position: 10px 15px!important;
       background-repeat: no-repeat!important;
       width: 100%!important;

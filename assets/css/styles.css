@@ -1,7 +1,3 @@
-.invitation-content {
-    font-size: 21px;
-}
-
 @-webkit-keyframes biilogo-pulse {
     from {
         -webkit-transform: scale3d(1, 1, 1);
