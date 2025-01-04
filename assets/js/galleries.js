@@ -37,78 +37,78 @@ photoGalleries.push({
     subHtml: `<div class="lg-sub-html"><h4>Tình yêu đích thực đứng về phía nhau trong những ngày tốt đẹp và sát cánh hơn trong những ngày tồi tệ</h4></div>`
 });
 photoGalleries.push({
-    src: "./assets/imgs/7634.jpg",
-    thumb: "./assets/imgs/7634.jpg",
+    src: "./assets/imgs/7272.jpg",
+    thumb: "./assets/imgs/7272.jpg",
     subHtml: `<div class="lg-sub-html"><h4>Được ai đó yêu sâu sắc sẽ mang lại cho bạn sức mạnh, trong khi yêu ai đó sâu sắc sẽ cho bạn dũng khí</h4></div>`
 });
 photoGalleries.push({
-    src: "./assets/imgs/7635.jpg",
-    thumb: "./assets/imgs/7635.jpg",
+    src: "./assets/imgs/7283.jpg",
+    thumb: "./assets/imgs/7283.jpg",
     subHtml: `<div class="lg-sub-html"><h4>Đối với thế giới, bạn có thể là một người, nhưng với một người, bạn là cả thế giới</h4></div>`
 });
 photoGalleries.push({
-    src: "./assets/imgs/7636.jpg",
-    thumb: "./assets/imgs/7636.jpg",
+    src: "./assets/imgs/7300.jpg",
+    thumb: "./assets/imgs/7300.jpg",
     subHtml: `<div class="lg-sub-html"><h4>Tôi yêu bạn vì tất cả những gì bạn đang có, tất cả những gì bạn đã có, và tất cả những gì bạn chưa hiện hữu</h4></div>`
 });
 photoGalleries.push({
-    src: "./assets/imgs/7637.jpg",
-    thumb: "./assets/imgs/7637.jpg",
+    src: "./assets/imgs/7311.jpg",
+    thumb: "./assets/imgs/7311.jpg",
     subHtml: `<div class="lg-sub-html"><h4>Bước đi với bàn tay của bạn trong tay tôi và bàn tay của tôi trong tay bạn, đó chính xác là nơi tôi muốn luôn ở đó</h4></div>`
 });
 photoGalleries.push({
-    src: "./assets/imgs/7638.jpg",
-    thumb: "./assets/imgs/7638.jpg",
+    src: "./assets/imgs/7337.jpg",
+    thumb: "./assets/imgs/7337.jpg",
     subHtml: `<div class="lg-sub-html"><h4>Bước đi với bàn tay của bạn trong tay tôi và bàn tay của tôi trong tay bạn, đó chính xác là nơi tôi muốn luôn ở đó</h4></div>`
 });
 photoGalleries.push({
-    src: "./assets/imgs/7639.jpg",
-    thumb: "./assets/imgs/7639.jpg",
+    src: "./assets/imgs/7343.jpg",
+    thumb: "./assets/imgs/7343.jpg",
     subHtml: `<div class="lg-sub-html"><h4>Bước đi với bàn tay của bạn trong tay tôi và bàn tay của tôi trong tay bạn, đó chính xác là nơi tôi muốn luôn ở đó</h4></div>`
 });
 photoGalleries.push({
-    src: "./assets/imgs/7640.jpg",
-    thumb: "./assets/imgs/7640.jpg",
+    src: "./assets/imgs/7364.jpg",
+    thumb: "./assets/imgs/7364.jpg",
     subHtml: `<div class="lg-sub-html"><h4>Bước đi với bàn tay của bạn trong tay tôi và bàn tay của tôi trong tay bạn, đó chính xác là nơi tôi muốn luôn ở đó</h4></div>`
 });
 photoGalleries.push({
-    src: "./assets/imgs/7641.jpg",
-    thumb: "./assets/imgs/7641.jpg",
+    src: "./assets/imgs/7384.jpg",
+    thumb: "./assets/imgs/7384.jpg",
     subHtml: `<div class="lg-sub-html"><h4>Bước đi với bàn tay của bạn trong tay tôi và bàn tay của tôi trong tay bạn, đó chính xác là nơi tôi muốn luôn ở đó</h4></div>`
 });
 photoGalleries.push({
-    src: "./assets/imgs/7642.jpg",
-    thumb: "./assets/imgs/7642.jpg",
+    src: "./assets/imgs/7387.jpg",
+    thumb: "./assets/imgs/7387.jpg",
     subHtml: `<div class="lg-sub-html"><h4>Bước đi với bàn tay của bạn trong tay tôi và bàn tay của tôi trong tay bạn, đó chính xác là nơi tôi muốn luôn ở đó</h4></div>`
 });
 photoGalleries.push({
-    src: "./assets/imgs/7643.jpg",
-    thumb: "./assets/imgs/7643.jpg",
+    src: "./assets/imgs/7393.jpg",
+    thumb: "./assets/imgs/7393.jpg",
     subHtml: `<div class="lg-sub-html"><h4>Bước đi với bàn tay của bạn trong tay tôi và bàn tay của tôi trong tay bạn, đó chính xác là nơi tôi muốn luôn ở đó</h4></div>`
 });
 photoGalleries.push({
-    src: "./assets/imgs/7644.jpg",
-    thumb: "./assets/imgs/7644.jpg",
+    src: "./assets/imgs/7463.jpg",
+    thumb: "./assets/imgs/7463.jpg",
     subHtml: `<div class="lg-sub-html"><h4>Bước đi với bàn tay của bạn trong tay tôi và bàn tay của tôi trong tay bạn, đó chính xác là nơi tôi muốn luôn ở đó</h4></div>`
 });
 photoGalleries.push({
-    src: "./assets/imgs/7645.jpg",
-    thumb: "./assets/imgs/7645.jpg",
+    src: "./assets/imgs/7474.jpg",
+    thumb: "./assets/imgs/7474.jpg",
     subHtml: `<div class="lg-sub-html"><h4>Bước đi với bàn tay của bạn trong tay tôi và bàn tay của tôi trong tay bạn, đó chính xác là nơi tôi muốn luôn ở đó</h4></div>`
 });
 photoGalleries.push({
-    src: "./assets/imgs/7646.jpg",
-    thumb: "./assets/imgs/7646.jpg",
+    src: "./assets/imgs/7495.jpg",
+    thumb: "./assets/imgs/7495.jpg",
     subHtml: `<div class="lg-sub-html"><h4>Bước đi với bàn tay của bạn trong tay tôi và bàn tay của tôi trong tay bạn, đó chính xác là nơi tôi muốn luôn ở đó</h4></div>`
 });
 photoGalleries.push({
-    src: "./assets/imgs/7647.jpg",
-    thumb: "./assets/imgs/7647.jpg",
+    src: "./assets/imgs/7509.jpg",
+    thumb: "./assets/imgs/7509.jpg",
     subHtml: `<div class="lg-sub-html"><h4>Bước đi với bàn tay của bạn trong tay tôi và bàn tay của tôi trong tay bạn, đó chính xác là nơi tôi muốn luôn ở đó</h4></div>`
 });
 photoGalleries.push({
-    src: "./assets/imgs/7648.jpg",
-    thumb: "./assets/imgs/7648.jpg",
+    src: "./assets/imgs/7529.jpg",
+    thumb: "./assets/imgs/7529.jpg",
     subHtml: `<div class="lg-sub-html"><h4>Bước đi với bàn tay của bạn trong tay tôi và bàn tay của tôi trong tay bạn, đó chính xác là nơi tôi muốn luôn ở đó</h4></div>`
 });
 
