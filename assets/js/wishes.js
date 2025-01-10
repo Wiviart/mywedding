@@ -33,6 +33,27 @@ document.getElementById('wish-form').addEventListener('submit', function (event)
     document.getElementById('wish-form').reset();
 });
 
+const getURL = (sheetName) => `https://wedding-proxy-429081919308.asia-southeast1.run.app/proxy?sheetName=${sheetName}`;
+
+function loadComments(sheetName) {
+    fetch(getURL(sheetName), {
+        method: "GET",
+        headers: { "Content-Type": "application/json" },
+    })
+        .then(response => response.json())
+        .then(data => {
+            if (Array.isArray(data)) {
+                data.forEach(comment => {
+                    displayComment(comment.Name, comment.Content);
+                });
+            } else {
+                console.error("Unexpected data format:", data);
+            }
+        })
+        .catch(error => console.error("Error fetching comments:", error));
+}
+
+// Display a single comment
 function displayComment(name, content) {
     const commentsSection = document.getElementById('show-comments');
     const newComment = document.createElement('div');
@@ -40,3 +61,9 @@ function displayComment(name, content) {
     newComment.innerHTML = `<h4>${name}</h4><p class="m-0">${content}</p>`;
     commentsSection.appendChild(newComment);
 }
+
+// Load comments when the page loads
+document.addEventListener("DOMContentLoaded", () => {
+    const sheetName = "Wishes"; // Replace with your sheet name
+    loadComments(sheetName);
+});
