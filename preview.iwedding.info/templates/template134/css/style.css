@@ -308,6 +308,7 @@ body {
 
 header .navbar-brand {
   font-size: 20px;
+  font-family: "Arial";
 }
 
 .offcanvas-menu li {
@@ -325,28 +326,28 @@ header .navbar-brand {
 }
 
 .offcanvas-menu .nav-link {
-  font-family: "Texturina", serif;
+  font-family: "Reddit Sans", serif;
   font-size: 1.2rem;
   text-transform: capitalize;
 }
 
 .section-title {
-  font-family: 'Moon Dance', cursive;
+  font-family: 'Imperial Script', cursive;
   letter-spacing: 1px;
   font-size: 2.5rem;
   color: #5b595a;
 }
 
 .section-sub-title {
-  font-family: "Bellota Text", cursive;
+  font-family: "Reddit Sans", cursive;
 }
 
 .title {
-  font-family: "Bellota Text", cursive;
+  font-family: "Reddit Sans", cursive;
 }
 
 .sub-title {
-  font-family: "Bellota Text", cursive;
+  font-family: "Reddit Sans", cursive;
 }
 
 /* Banner Section */
@@ -492,7 +493,13 @@ header .navbar-brand {
 /* story-section */
 
 .story-section .timeline .title {
-  /* color: #696e6f; */
+  color: #000000;
+}
+
+.story-section .timeline .date{
+  color: #940000;
+  font-style: italic;
+  font-weight: bold;
 }
 
 .timeline-card .img-holder {
@@ -610,6 +617,7 @@ header .navbar-brand {
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 12;
+  line-clamp: 12;
   -webkit-box-orient: vertical;
 }
 
@@ -638,7 +646,7 @@ header .navbar-brand {
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   z-index: 1;
-  background-color: #e3c28a;
+  background-color: #d3b580;
 }
 
 .flip-card-back>ul {

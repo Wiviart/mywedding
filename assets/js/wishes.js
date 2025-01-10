@@ -58,7 +58,7 @@ function displayComment(name, content) {
     const commentsSection = document.getElementById('show-comments');
     const newComment = document.createElement('div');
     newComment.className = 'box-comment p-3 mx-2 mb-3';
-    newComment.innerHTML = `<h4>${name}</h4><p class="m-0">${content}</p>`;
+    newComment.innerHTML = `<p class="comment-title">${name}</p><p class="comment">${content}</p>`;
     commentsSection.appendChild(newComment);
 }
 

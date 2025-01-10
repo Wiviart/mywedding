@@ -144,13 +144,15 @@
         right: calc(50% - 52px);
         bottom: 80px;
         -webkit-animation: arrow .5s 1s infinite ease-in-out alternate;
+        animation: arrow .5s 1s infinite ease-in-out alternate;
         z-index: 999;
         display: block !important;
         visibility: hidden
     }
 
     .mouse-scroll-on-mobile:hover {
-        -webkit-animation-play-state: paused
+        -webkit-animation-play-state: paused;
+        animation-play-state: paused;
     }
 
     .mouse-scroll-on-mobile .mouse-scroll-on-mobile-text {
@@ -171,11 +173,15 @@
         width: 30px;
         background: #de4659;
         -webkit-transform: rotate(240deg);
+        transform: rotate(240deg);
         bottom: 80px;
         left: 42px;
         -webkit-border-radius: 4px;
+        border-radius: 4px;
         -webkit-transform-origin: 5px 50%;
-        -webkit-animation: leftArrow .5s 1s infinite ease-out alternate
+        transform-origin: 5px 50%;
+        -webkit-animation: leftArrow .5s 1s infinite ease-out alternate;
+        animation: leftArrow .5s 1s infinite ease-out alternate;
     }
 
     .mouse-scroll-on-mobile .mouse-scroll-on-mobile-right {
@@ -184,15 +190,29 @@
         width: 30px;
         background: #de4659;
         -webkit-transform: rotate(-60deg);
+        transform: rotate(-60deg);
         bottom: 80px;
         left: 46px;
         -webkit-border-radius: 4px;
+        border-radius: 4px;
         -webkit-transform-origin: 5px 50%;
-        -webkit-animation: rightArrow .5s 1s infinite ease-out alternate
+        transform-origin: 5px 50%;
+        -webkit-animation: rightArrow .5s 1s infinite ease-out alternate;
+        animation: rightArrow .5s 1s infinite ease-out alternate;
     }
 }
 
 @-webkit-keyframes arrow {
+    0% {
+        bottom: 0
+    }
+
+    100% {
+        bottom: 40px
+    }
+}
+
+@keyframes arrow {
     0% {
         bottom: 0
     }
@@ -208,7 +228,19 @@
     }
 }
 
+@keyframes leftArrow {
+    100% {
+        -webkit-transform: rotate(225deg)
+    }
+}
+
 @-webkit-keyframes rightArrow {
+    100% {
+        -webkit-transform: rotate(-45deg)
+    }
+}
+
+@keyframes rightArrow {
     100% {
         -webkit-transform: rotate(-45deg)
     }
@@ -274,4 +306,19 @@
     background-color: #e30000;
     color: #fff;
     border-radius: 50%;
+}
+
+.card-text{
+    font-size: 14px;
+    font-family: "Arial", sans-serif;
+}
+
+.comment-title {
+    font-size: 1.5rem;
+    font-family: Ephestia;
+}
+
+.comment{
+    font-size: 16px;
+    font-family: Reddit Sans;
 }
