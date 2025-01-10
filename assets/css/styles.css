@@ -264,3 +264,14 @@
 .was-validated .form-select:invalid {
     border-color: #dc3545 !important;
 }
+
+.weddingdate-section .mini_calendar td #today {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 20px;
+    padding: 5px;
+    background-color: #e30000;
+    color: #fff;
+    border-radius: 50%;
+}
