@@ -1,5 +1,5 @@
 // Send form data to the proxy server
-const scriptURL = "https://wedding-proxy-429081919308.asia-southeast1.run.app/proxy";
+const scriptURL = "http://d9cd06a1607c.pr.edgegap.net:31969/proxy";
 
 function sendToGoogleSheets(name, email, content, sheetName) {
     const data = { name, email, content, sheetName };
@@ -33,7 +33,7 @@ document.getElementById('wish-form').addEventListener('submit', function (event)
     document.getElementById('wish-form').reset();
 });
 
-const getURL = (sheetName) => `https://wedding-proxy-429081919308.asia-southeast1.run.app/proxy?sheetName=${sheetName}`;
+const getURL = (sheetName) => `http://d9cd06a1607c.pr.edgegap.net:31969/proxy?sheetName=${sheetName}`;
 
 function loadComments(sheetName) {
     fetch(getURL(sheetName), {

@@ -4,7 +4,14 @@ const bodyParser = require("body-parser");
 const fetch = require("node-fetch").default;
 
 const app = express();
-app.use(cors());
+
+// 👇 CORS config to allow ONLY your frontend domain
+app.use(cors({
+    origin: "https://wedding.wiviart.io.vn",
+    methods: ["GET", "POST"],
+    allowedHeaders: ["Content-Type"]
+}));
+
 app.use(bodyParser.json());
 
 const scriptURL = "https://script.google.com/macros/s/AKfycbyeQ6ON2HoMmRSO4SkZlN0UPpDPOZxF9viDYEv_EQuB2cOSA7FRw76LKGmeowQwNlnQBQ/exec";
@@ -27,9 +34,8 @@ app.post("/proxy", async (req, res) => {
     }
 });
 
-app.listen(3000, () => console.log("Proxy running on http://localhost:3000"));
-
-const getURL = (sheetName) => `https://script.google.com/macros/s/AKfycbwo_VSiKLjq84y0wYroDaQUiJktOIZ4-cZeZQyoId0PXAxJAT_28uTVao5lpW0neS0B/exec?sheetName=${sheetName}`;
+const getURL = (sheetName) =>
+    `https://script.google.com/macros/s/AKfycbwo_VSiKLjq84y0wYroDaQUiJktOIZ4-cZeZQyoId0PXAxJAT_28uTVao5lpW0neS0B/exec?sheetName=${sheetName}`;
 
 app.get("/proxy", async (req, res) => {
     try {
@@ -44,3 +50,5 @@ app.get("/proxy", async (req, res) => {
         res.status(500).json({ error: "Failed to fetch data from Google Apps Script" });
     }
 });
+
+app.listen(3000, () => console.log("Proxy is running on port 3000"));
